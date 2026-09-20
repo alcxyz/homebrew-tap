@@ -5,21 +5,21 @@
 class Paperflow < Formula
   desc "File organizer and Paperless-ngx ingestion tool"
   homepage "https://github.com/alcxyz/paperflow"
-  version "0.4.0"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alcxyz/paperflow/releases/download/v0.4.0/paperflow_0.4.0_darwin_amd64.tar.gz"
-      sha256 "e8eb8866a99506d6907613b498da94a6d06be08ee846aedd24b1f272662ce722"
+      url "https://github.com/alcxyz/paperflow/releases/download/v0.4.2/paperflow_0.4.2_darwin_amd64.tar.gz"
+      sha256 "9ff20e82478a45a96311079a502bac558385b48f918127af1536ac8d167bba42"
 
       define_method(:install) do
         bin.install "paperflow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alcxyz/paperflow/releases/download/v0.4.0/paperflow_0.4.0_darwin_arm64.tar.gz"
-      sha256 "2fee389c7bc4197f293011515a9e60b6944a495f730b931d79d22ec4fc6b43d1"
+      url "https://github.com/alcxyz/paperflow/releases/download/v0.4.2/paperflow_0.4.2_darwin_arm64.tar.gz"
+      sha256 "9fa4fd958098df6acbc16272520a6e6a6a856228ca297418cb75b789d12e4ad4"
 
       define_method(:install) do
         bin.install "paperflow"
@@ -29,15 +29,15 @@ class Paperflow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alcxyz/paperflow/releases/download/v0.4.0/paperflow_0.4.0_linux_amd64.tar.gz"
-      sha256 "2dd99a25dce1813b658120bd821cf2cb52a2d220a530da6c50a2d371c1a38baa"
+      url "https://github.com/alcxyz/paperflow/releases/download/v0.4.2/paperflow_0.4.2_linux_amd64.tar.gz"
+      sha256 "8b88507d32e3356cea848e8049fd2bbcadee8fab79e9be4dd03d0b7aae5e4898"
       define_method(:install) do
         bin.install "paperflow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alcxyz/paperflow/releases/download/v0.4.0/paperflow_0.4.0_linux_arm64.tar.gz"
-      sha256 "1e24cb000d3f26e8558c9f3e50654224aa5d5382714697aaa9a7dbd59bdaed46"
+      url "https://github.com/alcxyz/paperflow/releases/download/v0.4.2/paperflow_0.4.2_linux_arm64.tar.gz"
+      sha256 "75cbab61e1288af97cf8979d16329ddc0073176c29e3b021c47ad540981943b3"
       define_method(:install) do
         bin.install "paperflow"
       end
